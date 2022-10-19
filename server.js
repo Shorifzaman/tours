@@ -12,8 +12,10 @@ const tourRoute = require('./routes/tour.route');
 //server
 const port = process.env.PORT || 5000;
 //DB CONNECTION
+const DATABASE_URL = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.l2jwh.mongodb.net/admin`;
+
 mongoose
-  .connect(process.env.DATABASE_URL, {
+  .connect(DATABASE_URL, {
     dbName: 'tour-management-system',
   })
   .then(() => {
@@ -23,7 +25,7 @@ mongoose
 
 //routes
 app.use('/api/v1/tour', tourRoute);
-app.get('/', (req, res) => {
+app.get('/', (req, res) => {3
   res.send('API Route is working');
 });
 
