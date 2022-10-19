@@ -1,48 +1,17 @@
-<h1 align="center"><Tour Management System></h1>
 
-<p align="center"><You are required to build an API for a tour management system for this assignment. In this system, you have to provide several endpoints to the client. The endpoints are:
 
-GET /tours
-Get all the tours
-The client can select some specific fields for getting the information he needs as query. 
-Example: /tours?fields=name,image
-Must be paginated.
-(BONUS) The client can send a field (e.g. price) as query to sort the data with it.
-Example: /tours?sort=price
-POST /tours
-Add a tour
-Must have a schema and the body should be validated through it.
-GET /tours/:id
-Get a tour details by id
-Send all the information of the tour
-Increase the view count by 1 for this tour every time a user hits this endpoint.
-PATCH /tour/:id
-Update a tour
-(BONUS) Body should be validated
-GET /tour/trending
-Get top 3 viewed tour
-GET /tour/cheapest
-Get top 3 cheapest tours></p>
+# Tour Management System
+### This is an Express JS application
+
 You are required to build an API for a tour management system for this assignment. In this system, you have to provide several endpoints to the client. The endpoints are:
 
-GET /tours
-Get all the tours
-The client can select some specific fields for getting the information he needs as query. 
-Example: /tours?fields=name,image
-Must be paginated.
-(BONUS) The client can send a field (e.g. price) as query to sort the data with it.
-Example: /tours?sort=price
-POST /tours
-Add a tour
-Must have a schema and the body should be validated through it.
-GET /tours/:id
-Get a tour details by id
-Send all the information of the tour
-Increase the view count by 1 for this tour every time a user hits this endpoint.
-PATCH /tour/:id
-Update a tour
-(BONUS) Body should be validated
-GET /tour/trending
-Get top 3 viewed tour
-GET /tour/cheapest
-Get top 3 cheapest tours
+## About The Project
+
+[Livesite](https://tours-iota.vercel.app/api/v1/tour/634f154e5ba2cb6d7dcd381c)
+
+- GET /tours Get all the tours
+- Add a tour
+- Get a tour details by id
+- Update a tour
+- Get top 3 viewed tour
+- Get top 3 cheapest tours
